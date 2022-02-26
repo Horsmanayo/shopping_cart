@@ -27,6 +27,10 @@ function ContextProvider({children}){
       setCartItems(prevItems => prevItems.filter(item => item.id !== id))
     }
 
+    function emptyCart(){
+      setCartItems([])
+    }
+
     const getAllPhotos=() => {
         Axios.get('https://raw.githubusercontent.com/bobziroll/scrimba-react-bootcamp-images/master/images.json')
           .then(response =>  {
@@ -46,7 +50,7 @@ function ContextProvider({children}){
     
 
     return (
-        <Context.Provider value={{allPhotos, toggleFavorite, addToCart, cartItems, removeFromCart}}>
+        <Context.Provider value={{allPhotos, toggleFavorite, addToCart, cartItems, removeFromCart, emptyCart}}>
             {children}
         </Context.Provider>
     )

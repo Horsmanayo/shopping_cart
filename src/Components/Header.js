@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import 'remixicon/fonts/remixicon.css'
 import { Link } from 'react-router-dom'
-import { Context } from "./Context"
+import { Context } from "../Context"
 
 function Header() {
 

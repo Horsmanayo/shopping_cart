@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import 'remixicon/fonts/remixicon.css'
-import { Context } from './Context'
+import { Context } from '../Context'
 import PropTypes from 'prop-types'
 
 
